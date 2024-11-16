@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <link rel="stylesheet" href="landing.css">
+    <title>Bem-vindo - Caneta de Ouro</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo, <span id="username"></span>!</h1>
+        <button id="sair" onclick="sair()">Sair</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Minhas Composições</h2>
+            <p>Aqui você pode criar, editar e salvar suas composições musicais.</p>
+            <button onclick="window.location.href='composicao.html'">Criar Nova Composição</button> <!-- Link para composicao.html -->
+        </section>
+
+        <section>
+            <h2>Avaliações</h2>
+            <p>Veja as avaliações que você fez nas composições de outros usuários.</p>
+            <button onclick="window.location.href='avaliacoes.html'">Ver Avaliações</button>
+        </section>
+
+        <section>
+            <h2>Meu Perfil</h2>
+            <p>Edite suas informações pessoais e veja seu histórico de composições.</p>
+            <button onclick="window.location.href='perfil.html'">Editar Perfil</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caneta de Ouro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Simulação de um usuário logado
+        const username = localStorage.getItem('username') || 'Usuário';
+        document.getElementById('username').textContent = username;
+
+        // Função para simular o logout
+        function sair() {
+            localStorage.removeItem('username'); // Remover o nome de usuário do armazenamento
+            window.location.href = 'index.html'; // Redirecionar para a página de login
+        }
+    </script>
+</body>
+</html>
