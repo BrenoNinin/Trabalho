@@ -1,0 +1,137 @@
+/* Estilos padrão (modo claro) */
+body {
+    background-color: #ffe4c4;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    margin: 0;
+    font-size: 62px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button {
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+    padding: 14px;
+    border-radius: 16px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Animação ao passar o mouse */
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Estilo para a listagem de composições */
+.composicao-item {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.composicao-item h3 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.composicao-item p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #666;
+}
+
+.composicao-item .data {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Estilo para o botão voltar */
+.voltar-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: all 0.3s ease;
+}
+
+.voltar-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Estilo para o botão editar */
+.editar-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.editar-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.criar-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.criar-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}

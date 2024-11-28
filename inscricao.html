@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscricao.css">
+    <title>Login e Inscrição - Caneta de Ouro</title>
+</head>
+<body>
+    <header>
+        <h1>Login e Inscrição</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Seção de Login -->
+            <section id="login">
+                <h2>Já tem uma conta?</h2>
+                <form action="login.php" method="POST">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+            </section>
+
+            <!-- Seção de Inscrição -->
+            <section id="inscricao">
+                <h2>Não tem uma conta? Inscreva-se!</h2>
+                <form action="inscricao.php" method="POST">
+                    <label for="novo_email">E-mail:</label>
+                    <input type="email" id="novo_email" name="email" placeholder="Digite seu e-mail" required>
+
+                    <label for="nova_senha">Senha:</label>
+                    <input type="password" id="nova_senha" name="senha" placeholder="Digite sua senha" required>
+
+                    <label for="confirmar_senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+
+                    <label for="usuario">Nome de Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Escolha um nome de usuário" required>
+
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Caneta de Ouro. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

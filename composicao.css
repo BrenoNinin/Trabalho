@@ -1,0 +1,160 @@
+/* Estilos para o modo claro */
+body {
+    background-color: #ffe4c4;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    margin: 0;
+    font-size: 62px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+button {
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+    padding: 14px;
+    border-radius: 16px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.clicado {
+    animation: clickAnimation 0.5s ease-in-out;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foto-perfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo para o botão "Voltar para a Página Inicial" */
+.voltar-btn {
+    background-color: black;
+    color: white;
+    padding: 14px;
+    border-radius: 16px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.voltar-btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}

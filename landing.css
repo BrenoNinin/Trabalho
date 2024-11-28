@@ -1,0 +1,116 @@
+/* Estilos padrão (modo claro) */
+body {
+    background-color: #ffe4c4;
+    color: black;
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins para o corpo */
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-family: 'Lora', serif; /* Fonte Lora para o título */
+    font-weight: normal;
+    margin: 0;
+    font-size: 62px; /* Aumentei o tamanho do título para ficar mais destacado */
+    letter-spacing: 1px; /* Aumentei o espaçamento entre as letras */
+    text-transform: uppercase; /* Transformando o texto para maiúsculas */
+}
+
+button {
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: black;
+    padding: 14px;
+    border-radius: 16px;
+    margin-left: auto;
+    cursor: pointer; /* Mudança do cursor para indicar interatividade */
+    transition: all 0.3s ease-in-out; /* Animação suave */
+    font-family: 'Roboto', sans-serif; /* Fonte do botão alterada para Roboto */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+}
+
+/* Animação ao passar o mouse */
+button:hover {
+    background-color: #ff6347; /* Cor de fundo muda ao passar o mouse */
+    transform: scale(1.1); /* Botão cresce ligeiramente */
+}
+
+/* Animação no clique */
+.clicado {
+    animation: clickAnimation 0.5s ease-in-out;
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+    background-color: #121212; /* Fundo escuro */
+    color: white; /* Texto claro */
+}
+
+body.dark-mode p {
+    color: white; /* Texto do parágrafo em branco no modo escuro */
+}
+
+main {
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size:24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
+.foto-perfil {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
